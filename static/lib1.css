@@ -1,0 +1,63 @@
+body
+{background-image:url('/static/background.jpeg')}
+.container{
+  
+  display:flex;
+  box-sizing: border-box;
+  /*flex-grow: 1;
+  flex-direction: row;*/
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  gap:50px;
+}
+.ig{
+  width: 200px;
+  height:200px;
+}
+
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+    h1 {text-align: center;}
+    h2{text-align: center;}
+    h4{text-align: center;}
+    h3{text-align: center;}
+    p{text-align: center;
+       font-size: x-large;}
+    container {
+        border: 1px solid black;
+        height: 200px;
+        position: relative;
+      }
+  
+      button {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      [type=radio] {
+        border: 0px;
+        width: 100%;
+        height: 2em;
+    }
+    input[type="password"] {
+      text-align: center;
+      font-size: larger;
+    }
+    
+    input[type="number"] {
+      text-align: center;
+      font-size: larger;
+      
+    }
+    .show{
+      /*Sets all the content of dropdown div to center*/
+              text-align: center; 
+          }
+    

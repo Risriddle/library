@@ -1,0 +1,24 @@
+{%extends "index.html" %}
+{%block title %}Membership{%endblock %}
+
+{%block body %}
+
+    
+<h2>{{member}} </h2>
+
+<h2>SELECT THE BOOK OF YOUR CHOICE FROM GENRES AVAILABLE</h2>
+
+<div class="center" class="dropdown show"> <!--show class in order to allign dropdown to center-->
+  <a class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    GENRES AVAILABLE
+  </a>
+<hr><br>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="/thriller">THRILLER</a>
+    <a class="dropdown-item" href="/romance">ROMANCE</a>
+    <a class="dropdown-item" href="/sci-fi">SCI-FI</a>
+  </div>
+</div>
+
+
+{% endblock %}

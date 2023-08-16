@@ -1,0 +1,73 @@
+{%extends "index.html" %}
+{%block title %}Sci_fi{%endblock %}
+
+{%block body %}
+
+<h1>AVAILABLE SCI-FI BOOKS!!</h1><hr>
+<h2>Select your book from these</h2>
+
+<hr>
+<h4>BOOKS AVAILABLE</h4><hr><br>
+
+
+<form action="/access" method="post" >
+  <div class="my-3">
+    <div class="form-check">
+      <input id="book1" name="book" class="center" value="static/the_hitchhiker_s_guide_to_the_galaxy.pdf" type="radio" class="form-check-input" checked="" required="">
+      <div  style ="text-align:center;">
+        <label class="form-check-label" style=font-size:30px for="book1">Hitch Hiker's Guide to Galaxy</label></div>
+      </div>
+      <br> <img src="https://sun9-12.userapi.com/impf/c636422/v636422061/66128/EjTkyzLR6x4.jpg?size=640x633&quality=96&sign=5e4b52ce5430e6fd92ab669db49a1011&c_uniq_tag=RhHlGosyRj0c_-uwCmuGfPtVIEUoB0Qfwz1pbRVNNTA&type=album 
+      " alt="hich_hikers_guide_to_galaxy" class="center" width="200" height="200">
+      <hr><br>
+    
+    <div class="form-check">
+      <input id="book2" name="book" class="center" value="static/Just for Fun_ The Story of an Accidental Revolutionary ( PDFDrive ).pdf" type="radio" class="form-check-input" required="">
+  <div style="text-align: center;">
+      <label class="form-check-label"  style=font-size:30px for="book2">Just for Fun</label></div>
+      <br> <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2wDp2JVZpAD7Gt7qUVjM7jhi2DdD5skeb8W6QqwAnqo8FoAvoLrWcXQIvPaH7jNgbPwk&usqp=CAU
+  " alt="just_for_fun"  class="center" width="200" height="200">
+  </div>
+  <hr><br>
+
+  <div class="form-check">
+    <input id="book3" name="book" class="center" value="static/the_three_body_problem.pdf" type="radio" class="form-check-input" required="">
+<div style="text-align: center;">
+    <label class="form-check-label"  style=font-size:30px for="book3">The Three Body Problem</label></div>
+    <br> <img src="https://m.media-amazon.com/images/I/81rjICLU+7L._AC_UF1000,1000_QL80_.jpg" alt="the_three_body_problem" class="center" width="200" height="200">
+</div>
+  
+  
+  <br><hr><h1>Enter membership ID</h1>
+   <input name="mid" autofocus autocomplete="off" class="center" style=font-size:20px; placeholder="ENTER MEMBERSHIP ID" required><br><button class="btn btn-primary btn-lg" style="background-color:darkgreen ;">ACCESS</button></form>
+
+    
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

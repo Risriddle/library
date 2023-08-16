@@ -1,0 +1,36 @@
+{%extends "index.html" %}
+{%block title %}Membership{%endblock %}
+
+{%block body %}
+
+      <br>
+<!--<h1>{{book}}{{msg}}</h1>
+<h1>{{m}}</h1>-->
+<br><hr>
+<body>
+  {% if m == " ": %} 
+  <h1>{{book}}{{msg}}</h1>
+  <h2>Please re-enter the book name</h2><br>
+<form action="/searchbook" method="post" >
+  <input type="text"class="center" name="book" placeholder="BOOK NAME" required><br><br>
+  <h2>ENTER YOUR MID TO ACCESS</h2><br>
+  <input type="number"  name="mid" class="center" placeholder="Membership ID" required><br><hr>
+  <button class="btn btn-primary btn-lg" style="background-color:darkgreen ;">ACCESS</button>  
+</form>
+
+{% else %}
+<h1>{{m}}</h1>
+<a href="/access"> <button class="btn btn-primary btn-lg" style="background-color:darkgreen ;">SEE AVAILABLE BOOKS</button></a>
+{% endif %}
+
+</body>
+
+{% endblock %}
+
+
+
+
+
+
+
+  

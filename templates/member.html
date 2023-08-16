@@ -1,0 +1,21 @@
+{%extends "index.html" %}
+{%block title %}Member{%endblock %}
+
+{%block body %}
+ 
+<br>
+<h2>YOU ARE A MEMBER.</h2>
+<h1>ENTER YOUR PASSWORD AND MEMBERSHIP ID</h1>
+<br><hr>
+<form  action="/download" method="post">
+  <input type="password" autofocus autocomplete="off" class="center" name="pwd"  placeholder="Password"><br>
+      <input type="number" autofocus autocomplete="off" class="center" name="mid" placeholder="Membership_ID">
+    <br><hr>
+      <button type="submit" class="btn btn-primary btn-lg" style="background-color:darkgreen ;" >Confirm identity</button>
+ 
+</form>
+
+
+
+
+  {% endblock %}

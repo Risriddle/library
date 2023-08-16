@@ -1,0 +1,43 @@
+
+
+{%extends "index.html" %}
+
+{%block title %}Romance{%endblock %}
+
+{%block body %}
+
+<h1>AVAILABLE ROMANCE BOOKS!!</h1><hr>
+<h2>Select your book from these</h2><hr>
+
+<form action="/access" method="post" >
+  <div class="my-3">
+    <div class="form-check">
+      <input id="book1" name="book" class="center" value="static/15-05-2021-052358It-Ends-with-Us.pdf" type="radio" class="form-check-input" checked="" required="">
+      <div  style ="text-align:center;">
+        <label class="form-check-label" style=font-size:30px for="book1">It Ends with Us</label></div>
+      </div>
+      <br> <img src="https://m.media-amazon.com/images/I/91TuJEMSPaL._AC_UF1000,1000_QL80_.jpg" alt="it_ends_with_us" class="center" width="200" height="200">
+      
+    <br><hr>
+    <div class="form-check">
+      <input id="book2" name="book" class="center" value="static/Romeo-and-Juliet-PDF.pdf" type="radio" class="form-check-input" required="">
+  <div style="text-align: center;">
+      <label class="form-check-label"  style=font-size:30px for="book2">Romeo and Juliet</label></div>
+      <br> <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRdD3f7QpCloAVYJoi-Nk4UwHu1e_B1ho0UW9D3zhLzHL8W1DiUifwhS02GJrU-vP14Zs&usqp=CAU
+  " alt="romeo_and_juliet"  class="center" width="200" height="200">
+  </div>
+  
+  
+  
+  <br><hr><h1>Enter membership ID</h1>
+   <input name="mid" autofocus autocomplete="off"class="center" style=font-size:20px; placeholder="ENTER MEMBERSHIP ID" required><br><button class="btn btn-primary btn-lg" style="background-color:darkgreen ;">ACCESS</button></form>
+
+
+
+
+
+  
+
+
+{% endblock %}
+

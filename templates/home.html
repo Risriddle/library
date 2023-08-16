@@ -1,0 +1,80 @@
+{%extends "index.html" %}
+{%block title %}Home{%endblock %}
+
+{%block body %}
+ <div>
+  <header><img id="image"></header>
+  
+ </div>
+
+<script>
+  arrayImage=['/static/img1.jpeg','/static/img2.jpeg','/static/img3.jpeg'];
+  let i=0;
+  setInterval(function(){if(i==3){i=0;}document.getElementById("image").src=arrayImage[i]; i++;},2000)
+</script>
+   
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">LIBRARY GENESIS <span class="text-muted">Generate a new experince with every BOOK you pick!!</span></h2>
+        <p class="lead" >Grab a book and escape reality........coz between the pages of a book there lies a separate world.</p><br><br><hr>
+          <p>Books are keys to wisdom's treasure</p>
+          <p>Books are gates to lands of pleasure</p>
+          <p>Books are paths that upward lead</p>
+          <p>Books are friends;come let us read<br><br><hr> <p>ABOUT US-<p><h2>DOWNLOAD BOOKS FOR FREE</h2><br> <p>Library genesis helps you to pick your very next reading experience. You can easily search for the book of choice from the available genres.</p>
+          <p>So select the book of your choice and download its pdf version. Library genesis is just like your own Personal Library. The books are available free of cost after the membership has been acquired. It is as easy as issuing books from a real library, here you get the books at the comfort of your house.So start your journey with libraray genesis instantly...
+          <br><br> GENRES available- Romance , Action , Sci-fi.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img src= "https://source.unsplash.com/800x500/?hogwarts_library">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1"><br><br><br></b>THANK YOU FOR CHOOSING LIBRARY GENESIS!!!<span class="text-muted"></span></h2>
+        <p class="lead">Thank you for choosing us. We will make sure to provide you an enriched experience.<br> Acquire your library genesis Membership using this link -<br> <a href="/membership">Membership</a> <br>
+      </div>
+      <div class="col-md-5 order-md-1">
+       <img src= "https://source.unsplash.com/800x500/?thank you">
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1"><span class="text-muted">To get started!</span></h2>
+        <p class="lead">ACQUIRE MEMBERSHIP FOR ACCESS OF BOOKS</p>
+        <form action="/membership" ><h3>TO BECOME MEMBER</h3><button class="btn btn-primary btn-lg" class="container" style="background-color:darkgreen ;">GET MEMBERSHIP</button>
+        </form>
+        <br><hr><br>
+        <form action="/member" ><h3>FOR MEMBERS</h3><button class="btn btn-primary btn-lg" class="container" style="background-color:darkgreen ;">GET MEMBERSHIP</button>
+        </form>
+    
+      </div>
+      <div class="col-md-5">
+        
+        <img src= "https://source.unsplash.com/800x500/?boy reading book" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    
+    
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+</main>  
+
+{%endblock %}

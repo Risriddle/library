@@ -1,0 +1,76 @@
+{%extends "index.html" %}
+{%block title %}Thriller{%endblock %}
+
+{%block body %}
+ 
+<h1>AVAILBLE THRILLER BOOKS!!</h1><hr>
+<h2>Select your book from these</h2><hr>
+
+<form action="/access" method="post" >
+<div class="my-3">
+  <div class="form-check">
+    <input id="book1" name="book" class="center" value="static/A Good Girls Guide to Murder (Holly Jackson) (z-lib.org).pdf" type="radio" class="form-check-input" checked="" required="">
+    <div  style ="text-align:center;">
+      <label class="form-check-label" style=font-size:30px for="book1">Good girl's guide to murder </label></div>
+    </div>
+    <br> <img src="https://cdn.shopify.com/s/files/1/0024/6874/1219/products/B2D3732HollyJackson3Books-Thumbnail.jpg" alt="good_girl's_guide_to _murder" class="center" width="200" height="200">
+    
+  <br><hr>
+  <div class="form-check">
+    <input id="book2" name="book" class="center" value="static/good_girl_bad_blood.pdf" type="radio" class="form-check-input" required="">
+<div style="text-align: center;">
+    <label class="form-check-label"  style=font-size:30px for="book2">Good girl bad blood</label></div>
+    <br> <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQUrgZJeypFhuijZlmvDIfQW438PVlHC-AwOUvpB2H7TUR0bA7lVlKjJrVUaMxvXjErf4&usqp=CAU
+" alt="good_girl_bad_blood"  class="center" width="200" height="200">
+</div>
+<br><hr>
+
+<div class="form-check">
+  <input id="book3" name="book" class="center" value="static/digital_fortress.pdf" type="radio" class="form-check-input" checked="" required="">
+  <div  style ="text-align:center;">
+    <label class="form-check-label" style=font-size:30px for="book3"> Digital Fortress</label></div>
+  </div>
+  <br> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHdIM3ITm6Rai797LlRe6b2ZmaTdTQsYDARQ&usqp=CAU" alt="digital_fortress" class="center" width="200" height="200">
+  
+<br><hr>
+<div class="form-check">
+  <input id="book4" name="book" class="center" value="static/Angels & Demons - Dan Brown.pdf" type="radio" class="form-check-input" required="">
+<div style="text-align: center;">
+  <label class="form-check-label"  style=font-size:30px for="book4">Angels and Demons</label></div>
+  <br> <img src=" https://m.media-amazon.com/images/I/81adkKbGZgL._AC_UF1000,1000_QL80_.jpg
+" alt="angels_and_demons"  class="center" width="200" height="200">
+</div>
+
+<br><hr>
+<div class="form-check">
+  <input id="book5" name="book" class="center" value="static/The Last Time I Lied A Novel (Riley Sager [Sager, Riley]) (z-lib.org).pdf" type="radio" class="form-check-input" required="">
+  <div style="text-align: center;">
+  <label class="form-check-label"  style=font-size:30px for="book5">The last time i lied</label></div>
+  <br> <img src=" https://images.squarespace-cdn.com/content/v1/597f49e25016e1ac9a8fc7e7/1530552320952-QMTBELXDC9D60VBDEE5W/The+Last+Time+I+Lied+by+Riley+Sager+book+cover+image.jpg
+" alt="the_last_time_i_lied"  class="center" width="200" height="200">
+</div>
+
+<br><hr><h1>Enter membership ID</h1>
+ <input name="mid" autofocus autocomplete="off" class="center" style=font-size:20px; placeholder="ENTER MEMBERSHIP ID" required><br><button class="btn btn-primary btn-lg"  style="background-color:darkgreen ;">ACCESS</button></form>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
