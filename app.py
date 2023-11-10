@@ -4,10 +4,18 @@ from flask import *
 from pymongo import MongoClient
 import random
 import re
+import os
 
+# Retrieve MongoDB connection string from environment variable
+connection_string = os.environ.get("MONGODB_CONNECTION_STRING")
 
-client = MongoClient("mongodb://127.0.0.1:27017")
-#print("Connection Successful")
+# Check if the connection string is available
+if connection_string is None:
+    raise ValueError("MongoDB connection string not found in environment variables")
+
+# Create MongoClient
+client = MongoClient(connection_string)
+
 
 db = client["Library"]  #name of DB
 collection = db["members_info"] # name of collection
