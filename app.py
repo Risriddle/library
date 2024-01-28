@@ -7,7 +7,7 @@ import re
 import os
 
 # Retrieve MongoDB connection string from environment variable
-connection_string = mongodb+srv://risriddle62442:BxpQzTINdaaMJqHQ@cluster1.c4sf35u.mongodb.net/
+connection_string = "mongodb+srv://risriddle62442:BxpQzTINdaaMJqHQ@cluster1.c4sf35u.mongodb.net/"
 
 # Check if the connection string is available
 if connection_string is None:
