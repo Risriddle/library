@@ -207,4 +207,4 @@ api.add_resource(Member ,'/member',methods=['GET','POST'])
 
 if __name__ == '__main__':
     obj=Member()
-    app.run(debug=True)  
+    app.run(debug=False)  
